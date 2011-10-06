@@ -1,0 +1,15 @@
+# node-timedout
+
+limit execution time
+
+# sample code
+
+    var timedout = require('./build/Release/timedout.node');
+    timedout.timedout(function() {
+      for (;;) {
+        console.log("OUT");
+      }
+    }, 1000);
+
+# 補足
+一秒単位で, 超えたらまさかのTerminate
